@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000000;
+    font-family: Arial;
+    transition: background 0.2s linear;
+  }
+  
+  /* Center pag web */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Agrega padding entre cada column */
+  .row,
+  .row > .column {
+    padding: 4px;
+  }
+  
+  /* Crea 3 columns iguales que flotan entre ellas */
+  .column {
+    float: left;
+    width: 49.1%;
+    display: none; /* Oculta todos los elementos por default */
+  }
+  
+  /* Borra floats después de rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content ----CAMBIOS*/
+  .content {
+    background-color: rgba(71, 75, 80, 0.7);
+    padding: 10px;
+    color:rgb(0, 0, 0);
+  }
+  img,h4,p{
+  margin-left: 1px;
+  }
+  /* la class "show" es agregada a los elementos filtrados */
+  .show {
+    display: block;
+  }
+  
+  /* Style a los buttons (btn) */
+  .btn {
+    border-radius: 40px;
+    outline: none;
+    padding: 40px 40px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  /*coloca color blanco cuando se pasa el mouse encima del botón*/
+  .btn:hover {
+    background-color: #ddd;
+  }
+  /*coloca color gris cuando se da clic en botón activo*/
+  .btn.active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }

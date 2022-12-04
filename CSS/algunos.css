@@ -1,0 +1,106 @@
+
+
+
+body {
+    margin-left: auto;
+    font-family: 'Krona One', sans-serif;
+}
+
+h3.subt {
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+
+h3 {
+    letter-spacing: 0.2em;
+}
+
+h3, h4, h5 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+.row2 {
+    margin-left: 0px !important;
+}
+
+
+
+.Blanco2 {
+    background-color: #1b3039 !important;
+}
+    
+ 
+
+.Widget-1,
+.Widget-2,
+.Widget-3,
+.Widget-4,
+.Widget-5,
+.Widget-6,
+.Widget-7,
+.Widget-8 {
+    background-color:white !important;
+    color: rgb(255, 255, 255);
+    border: #1b3039 12px solid;
+}
+
+img.showText {
+    width: 250px;
+    height: 250px;
+    margin-top: 7px;
+    
+}
+
+.content_img {
+    position: relative;
+    width: 10px;
+    height: 300px;
+    object-fit: contain;
+    margin-right: auto;
+    
+}
+
+.content_img div {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    background: rgb(255, 255, 255);
+    color: white !important;
+    padding: 10px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: visibility 0s, opacity 0s linear;
+    
+}
+
+.content_img span {
+    font-weight: bold;
+    font-size: 2em;
+    padding: .5em;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+span.rotate:hover {
+    transform: rotate(70deg);
+}
+
+.content_img:hover {
+    cursor:pointer;
+}
+
+.content_img:hover div {
+    width: 230px;
+    height: 250px;
+    background-color: rgb(0, 0, 0) !important;
+    visibility: visible;
+    opacity: 0.9;
+    margin-left: -22px !important;
+    margin-top: -27px !important;
+    transform: scale(1.0);
+}

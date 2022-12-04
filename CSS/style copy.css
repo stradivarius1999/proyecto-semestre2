@@ -1,0 +1,137 @@
+
+:root{
+    --green:#ffffff;
+    --black: #1b3039;
+    --light-color:rgb(0, 0, 0);
+}
+body{
+    background-image: url(../IMG/fondo.jpeg);
+}
+
+.navbar navbar-expand-lg navbar-light bg-light fixed-top{
+    padding: 100vh;
+}
+
+
+.miv{
+    background-color: #1b3039;
+    font-family: 'Fuzzy Bubbles', cursive;
+    padding: 2%;
+    color:white;
+    width: 100%;
+    right: 10px;
+    left: 1px;
+    position: absolute;
+    text-align: center; 
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 10px;
+    
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading h1{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    }
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+.btn1:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{ 
+    width: 100%;
+}
+
+.about .row .content1{
+    flex:1 1 45rem;
+}
+
+.about .row .content1 h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.about .row .content1 p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+}
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        justify-content: column;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+

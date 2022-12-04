@@ -1,0 +1,124 @@
+
+body{
+    margin: 0;
+    margin-left: 80px;
+    text-align: left;
+    background-image: url(../IMG/fondo.jpeg);
+    position:relative;
+    padding-bottom: 8em;
+    min-height: 100vh;
+}
+.titulo{
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(248, 248, 248);
+    font-size:xx-large;
+}
+.miv{
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(255, 255, 255);
+    font-size:xx-large;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding:0 0;
+    display:flex;
+    align-items: right;
+    justify-content: space-between;
+}
+
+.collapse navbar-collapse{
+text-align:left;
+}
+
+.navbar-brand {
+font-size: 20px;
+left: 90px;
+text-align:left;
+color:center,rgb(255, 255, 255);
+font-weight:bold;
+padding: 0PX 0;
+}
+
+#miCarrusel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active{
+    height: 85vh;
+}
+
+.flip-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    perspective: 500px;
+    position: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    flex-wrap: wrap;
+}
+
+.flip-box-full {
+    position: center;
+    width: 280px;
+    height: 280px;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+    margin-right: 40px;
+    border: 3px solid #fff;
+    
+}
+
+.flip-box-full:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-box-img, .flip-box-text {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    object-fit: contain;
+}
+
+.flip-box-img {
+    background-color: #bbb;
+    color: white;
+}
+
+.flip-box-text {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* slider imagne */
+
+
+
+/* footer */
+.footer {
+    background-color: rgb(0, 0, 0); 
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    text-align: center; 
+}
+
+.footer p {
+        font-size: 10;
+    }
+
+.p {
+    list-style-type: georgian;
+}
+
+
